@@ -41,8 +41,8 @@ var getRepoIssues = function(repo) {
       });
     }
     else {
-      console.log(response);
-      alert("There was a problem with your request!");
+      //if not successful, redirect to homepage
+      document.location.replace("./index.html");
     }
   });
 };
